@@ -1,3 +1,4 @@
+'use strict'
 var express = require('express');
 var app = express();
 
@@ -25,7 +26,7 @@ app.get('/mqtt_response', cors(), function(req, res){
   msg_to_be_sent = "Nothing new:";
 });
 
-var server = app.listen(8081, function () {
+var server = app.listen(8080, function () {
 
    var host = server.address().address
    console.log(host);
